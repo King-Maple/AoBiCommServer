@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation 'org.thymeleaf:thymeleaf:3.0.14.RELEASE'
+    implementation 'org.thymeleaf:thymeleaf-spring5:3.0.14.RELEASE'
+    implementation 'commons-codec:commons-codec:1.15'
+    implementation 'one.util:streamex:0.7.3'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'commons-io:commons-io:2.11.0'
+    implementation 'com.github.zhkl0228:unidbg-api:0.9.7'
+    implementation 'com.github.zhkl0228:unidbg-android:0.9.7'
+    implementation 'com.github.zhkl0228:unidbg-dynarmic:0.9.7'
+    implementation 'com.github.zhkl0228:unidbg-unicorn2:0.9.7'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.3'
+    implementation 'org.springframework.boot:spring-boot-configuration-processor:2.6.3'
+
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+}

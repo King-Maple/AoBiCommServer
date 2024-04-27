@@ -1,0 +1,24 @@
+server:
+  #端口
+  port: 9999
+
+application:
+  unidbg:
+    # 是否启用 dynarmic 引擎
+    dynarmic: false
+    #是否打印jni细节
+    verbose: false
+    # 是否使用异步多线程,默认值为true，如果false则改成加锁单线程调用
+    async: false
+
+spring:
+  task:
+    execution:
+      pool:
+        allow-core-thread-timeout: true
+        # 8个核心线程
+        core-size: 8
+        # 超过多久没用的线程自动释放
+        keep-alive: 60s
+        # 最多增长到多少线程
+        max-size: 8

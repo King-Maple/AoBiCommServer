@@ -1,0 +1,3 @@
+
+rootProject.name = "奥比岛加密服务端"
+include ':app'
